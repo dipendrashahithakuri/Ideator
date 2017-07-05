@@ -6,9 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700" rel="stylesheet">
   </head>
 
   <body>
+  
+<nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Ideator</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">All Ideas</a></li>
+          <li><a href="#">Inspire Me</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
