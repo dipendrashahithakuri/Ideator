@@ -8,12 +8,17 @@ default: &default
 
 development:
   <<: *default
-  database: ideator_development
+  database: my_app_development
 
 test:
   <<: *default
-  database: ideator_test
+  database: my_app_test
 
 production:
   <<: *default
-  database: ideator_production
+  database: my_app_production
+
+  class IdeasController < ApplicationController
+  def index
+  end
+end
