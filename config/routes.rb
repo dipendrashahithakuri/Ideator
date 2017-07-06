@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'ideas#index' 
+  root 'ideas#index
+  
+  resources :ideas' 
 end

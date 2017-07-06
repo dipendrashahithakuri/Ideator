@@ -4,6 +4,6 @@ class CreateIdeas < ActiveRecord::Migration[5.1]
       t.text :description
       t.string :author
       t.timestamps null: false
-    end
+     end
   end
 end
