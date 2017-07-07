@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyApp</title>
+    <title>Dipendra's App</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,13 +13,15 @@
   
     <div id="Wrap">
       <%= render 'shared/nav' %>
+    </div>
 
       <div class = "container">
           <%= yield %>
       </div>
 
-    </div>
+    <div>
      <%= render 'shared/footer' %>
+    </div>
 
   </body>
 </html>
