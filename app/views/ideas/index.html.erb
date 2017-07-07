@@ -1,6 +1,22 @@
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add Idea
+  Add Your Idea
 </button>
+
+   <% @ideas.each do |idea| %>
+    <div class="panel panel-default">
+    <div class="panel-body">
+      <blockquote>
+        <p><%= idea.description %></p>
+        <small>by <%= idea.author %></small>
+      </blockquote>
+      <br>
+      <div class="btn-group" role="group">
+          <%= link_to 'Delete', idea_path(idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure?"} %>
+          <%= link_to 'Edit', edit_idea_path(idea), class: 'btn btn-sm btn-success' %>
+            </div>
+          </div>
+      </div>
+      <% end %>
 
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -15,6 +31,7 @@
           <%= f.input :description %>
           <%= f.input :author %>
         </div>      
+
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <%= f.submit 'Submit', class: 'btn btn-primary' %>
