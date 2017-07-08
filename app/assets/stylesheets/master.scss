@@ -6,12 +6,12 @@ $secondary-font: 'Dosis', sans-serif;
 
 .navbar{
   font-family: $secondary-font;
-  background-color:burlywood;
+  background-color:#F17F42;
 }
 
 html, body {
   font-family: $primary-font;
-  background-color: greenyellow;
+  background-color:#CE6D39 ;
 }
 
 .navbar .navbar-brand {
@@ -40,4 +40,5 @@ body {
 /* Set the fixed height of the footer here */
 .footer {
   height: $footer-height; 
+  background-color: #000000;
 }
