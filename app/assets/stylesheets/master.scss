@@ -1,4 +1,4 @@
-$main-blue: #337ab7;  
+$main-black: black;  
 $footer-height: 45px; 
 
 $primary-font: 'Open Sans', sans-serif;  
@@ -6,18 +6,19 @@ $secondary-font: 'Dosis', sans-serif;
 
 .navbar{
   font-family: $secondary-font;
-  background-color:white;
+  background-color:burlywood;
 }
 
 html, body {
   font-family: $primary-font;
+  background-color: greenyellow;
 }
 
 .navbar .navbar-brand {
-  font-weight: 100; 
+  font-weight: 500; 
   font-size: 30px;
   letter-spacing: 2px;
-  color: $main-blue;
+  color: $main-black;
 }
 
 html,
